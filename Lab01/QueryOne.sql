@@ -22,3 +22,31 @@ GO
 USE AdventureWorks2016
 SELECT name FROM sys.views
 GO
+
+/* Visualizar la información detallada de una base de datos */
+EXEC sp_helpdb AdventureWorks2016
+GO
+
+/* Utilizando snippets */
+-- Create a new database called 'ColegioMG'
+-- Connect to the 'master' database to run this snippet
+USE master
+GO
+-- Create the new database if it does not exist already
+IF NOT EXISTS (
+    SELECT name
+        FROM sys.databases
+        WHERE name = N'ColegioMG'
+)
+CREATE DATABASE ColegioMG
+GO
+
+/* Eliminar una Base de Datos */
+DROP DATABASE HospitalHHH
+GO
+
+/* Eliminar base de datos AdventureWorks2016 */
+DROP DATABASE AdventureWorks2016
+GO
+DROP DATABASE AdventureWorks
+GO
