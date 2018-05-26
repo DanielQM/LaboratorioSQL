@@ -17,3 +17,8 @@ GO
 USE AdventureWorks2016
 SELECT name FROM sys.tables
 GO
+
+/* Ver listado de vistas de una base de datos */
+USE AdventureWorks2016
+SELECT name FROM sys.views
+GO
