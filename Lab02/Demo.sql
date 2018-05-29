@@ -25,16 +25,3 @@ FROM HumanResources.Employee
 WHERE BusinessEntityID >= '10'
 AND BusinessEntityID <= '40'
 OR JobTitle like 'V%'
-
-
-
-
-
-
-
-
-
-
-create view d
-as select FirstName, PhoneNumber
-FROM
